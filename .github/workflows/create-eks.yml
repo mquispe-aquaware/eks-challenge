@@ -28,6 +28,6 @@ jobs:
         run: |
           eksctl create cluster \
             --name mrk-dev-challenge \
-            --region us-east-1 \
+            --region us-east-2 \
             --node-type t3.small \
             --nodes 2
