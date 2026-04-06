@@ -2,7 +2,9 @@ name: Provision EKS Cluster
 
 on:
   push:
-
+    paths:
+      - 'day1/**'   # <--- ¡Esto es el filtro! 
+      - '.github/workflows/create-eks.yml' # También si cambias el propio workflow
 jobs:
   create_cluster:
     runs-on: ubuntu-latest
